@@ -43,7 +43,7 @@ services:
     container_name: todo-cache-ingestion
     build:
       context: todo-cache-ingestion
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-cache-ingestion:development
     command: sh /app/start.sh
     environment:
@@ -59,7 +59,7 @@ services:
     container_name: todo-cache-service
     build:
       context: todo-cache-service
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-cache-service:development
     ports:
       - 3001:3000
@@ -73,7 +73,7 @@ services:
     container_name: todo-search-ingestion
     build:
       context: todo-search-ingestion
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-search-ingestion:development
     command: sh /app/start.sh
     environment:
@@ -88,7 +88,7 @@ services:
     container_name: todo-search-service
     build:
       context: todo-search-service
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-search-service:development
     command: sh /app/start.sh
     ports:
@@ -103,7 +103,7 @@ services:
     container_name: todo-storage-ingestion
     build:
       context: todo-storage-ingestion
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-storage-ingestion:development
     command: sh /app/start.sh
     environment:
@@ -121,7 +121,7 @@ services:
     container_name: todo-storage-service
     build:
       context: todo-storage-service
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-storage-service:development
     ports:
       - 3003:3000
@@ -138,7 +138,7 @@ services:
     container_name: todo-api-gateway
     build:
       context: todo-api-gateway
-      dockerfile: ../Dockerfile.nodejs.dev
+      dockerfile: ../../Dockerfile.nodejs.dev
     image: todo-api-gateway:development
     command: sh /app/start.sh
     ports:
