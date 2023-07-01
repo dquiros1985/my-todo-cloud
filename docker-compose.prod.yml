@@ -54,3 +54,4 @@ services:
 
   todo-proxy:
     image: dquiros1985/todo-proxy:1.0
+    
